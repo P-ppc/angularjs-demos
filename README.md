@@ -1,2 +1,1 @@
-# simple-angular-expand
-angularjs
+### some angulrjs demos
