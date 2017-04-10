@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body ng-controller="mainCtrl">
+    <button ng-click="addBox()">点击添加漂浮盒子</button>
+    <div ng-repeat="box in boxes" float-box ng-click="removeBox(box)">
+    </div>
+
+<script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/angular-animate/angular-animate.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.float-box {
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px 0;
+    background: #60c2ef;
+    color: #fff;
+    cursor: pointer;
+
+    position: relative;
+    transition: all .3s;
+}
+
+.float-box.ng-enter {
+    transform: translateY(60px);
+    opacity: 0;
+}
+
+.float-box.ng-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.float-box.ng-leave {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.float-box.ng-leave-active {
+    transform: translateX(180px);
+    opacity: 0;
+}
