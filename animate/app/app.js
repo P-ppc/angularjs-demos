@@ -4,7 +4,7 @@ app.directive("floatBox", [function () {
     return {
         restrict: "EA",
         replace: true,
-        template: '<div class="float-box">漂浮的盒子, 点击滑出</div>',
+        template: '<div class="float-box"><span>漂浮的盒子, 点击滑出</span></div>',
         link: function (scope, element, attr) {
         }
     };

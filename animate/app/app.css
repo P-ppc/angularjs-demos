@@ -5,21 +5,31 @@
     text-align: center;
     margin: 10px 0;
     background: #60c2ef;
-    color: #fff;
     cursor: pointer;
 
     position: relative;
-    transition: all .3s;
+    transition: all 1s;
+}
+
+.float-box span {
+    color: blue;
+    transition: color 1s;
 }
 
 .float-box.ng-enter {
     transform: translateY(60px);
-    opacity: 0;
 }
 
 .float-box.ng-enter-active {
     transform: translateY(0);
-    opacity: 1;
+}
+
+.float-box.ng-enter span {
+    color: red;
+}
+
+.float-box.ng-enter-active span {
+    color: blue;
 }
 
 .float-box.ng-leave {
@@ -30,4 +40,12 @@
 .float-box.ng-leave-active {
     transform: translateX(180px);
     opacity: 0;
+}
+
+.float-box.ng-leave span {
+    color: blue;
+}
+
+.float-box.ng-leave-active span {
+    color: red;
 }
